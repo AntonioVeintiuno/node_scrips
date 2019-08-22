@@ -4,7 +4,7 @@ const sqlite3 = require('sqlite3').verbose();
 let db = new sqlite3.Database('./db/sample.db');
 
 // insert one row into the items table
-db.run(`INSERT INTO items(name) VALUES(?)`, ['F'], function(err) {
+db.run(`INSERT INTO items(name) VALUES(?)`, ['Nodejs'], function(err) {
   if (err) {
     return console.log(err.message);
   }
