@@ -18,13 +18,9 @@ db.all(sql, [], (err, rows) => {
       var driver = new webdriver.Builder().usingServer(cbtHub).withCapabilities({'browserName': 'internet explorer'}).build();
 
       await driver.get('http://www.google.com');
-      // await driver.getTitle().then(function(title) {
-      //     console.log("The title is: " + title);
-      //   });
       driver.findElement(webdriver.By.name('q')).sendKeys(name).then(function(){
         driver.getTitle().then(function(title) {
           console.log(title);
-          console.log(registros);
           driver.quit();
         });
       });
@@ -42,7 +38,6 @@ db.all(sql, [], (err, rows) => {
   }
   rows.forEach((row) => {
     basicExample(row.name);
-    // console.log(row.name);
   });
 });
 
