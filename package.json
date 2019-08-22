@@ -4,7 +4,9 @@
   "description": "this repo contains node scripts",
   "main": "index.js",
   "dependencies": {
-    "googleapis": "^39.2.0"
+    "googleapis": "^39.2.0",
+    "selenium-webdriver": "^4.0.0-alpha.4",
+    "sqlite3": "^4.1.0"
   },
   "devDependencies": {},
   "scripts": {

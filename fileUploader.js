@@ -1,6 +1,7 @@
 const fs = require('fs');
 const readline = require('readline');
 const {google} = require('googleapis');
+// This script load a excel file to googledrive
 
 // If modifying these scopes, delete token.json.
 const SCOPES = ['https://www.googleapis.com/auth/drive'];
@@ -92,7 +93,7 @@ function uploadFile(auth){
           // Handle error
           console.error(err);
       } else {
-          console.log('File Id: ', file.id);
+          console.log('File Id: ', file.data.id);
       }
    });
 }
