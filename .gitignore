@@ -88,3 +88,4 @@ typings/
 .dynamodb/
 # other files
 credentials.json
+.DS_Store
