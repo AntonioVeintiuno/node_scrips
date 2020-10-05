@@ -3,10 +3,10 @@ const readXlsxFile = require('read-excel-file/node');
 const { Client } = require('pg');
 
 const client = new Client({
-  user: 'usuario',
+  user: 'root',
   host: 'localhost',
-  database: 'test',
-  password: '12345678',
+  database: 'sales',
+  password: 'facebook98',
   port: 5432,
 })
 
